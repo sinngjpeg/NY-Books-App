@@ -1,12 +1,16 @@
 package com.example.nybooksapp.presetation.books
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.nybooksapp.R
+import androidx.appcompat.app.AppCompatActivity
+import com.example.nybooksapp.databinding.ActivityBooksBinding
 
 class BooksActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        val binding = ActivityBooksBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_books)
+        setContentView(binding.root)
+
+        binding.toolbarMain.title = "Books"
+        setSupportActionBar(binding.toolbarMain)
     }
 }
