@@ -7,7 +7,7 @@ import com.example.nybooksapp.data.model.Book
 import com.example.nybooksapp.databinding.ItemBookBinding
 
 class BooksAdapter(
-    val books: List<Book>
+    private val books: List<Book>
 ) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BooksViewHolder {
