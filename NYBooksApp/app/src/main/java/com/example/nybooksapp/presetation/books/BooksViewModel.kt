@@ -10,7 +10,7 @@ class BooksViewModel : ViewModel() {
     val booksLiveData: MutableLiveData<List<Book>> = MutableLiveData()
 
     fun getBooks() {
-        booksLiveData.value = createFakeBooks()
+//        booksLiveData.value = createFakeBooks()
     }
 
     fun createFakeBooks(): List<Book> {
